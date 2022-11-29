@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgUTM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/tiket_hw" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textUTMNama"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Tiket Hawai Waterpark - Weekday (Senin-Jumat)"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textUTMHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="Rp55.000"
+                android:textSize="6pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:text="Tanggal"
+                android:textSize="6pt" />
+
+            <TextView
+                android:id="@+id/textUTMTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgUTMTrash"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/ic_trash" />
+
+    </LinearLayout>
+
+</LinearLayout>

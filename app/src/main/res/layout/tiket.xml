@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgTM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/tiket_hw" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTMNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiket Hawai Waterpark - Weekday (Senin-Jumat)"
+            android:textSize="5pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTMHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp55.000"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/textTMDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiket ini dapat dibeli 1 hari sebelum kedatangan. Tiket Sudah termasuk penggunaan semua wahana permainan air. Tinggi badan 85 cm keatas sudah dikenakan tiket penuh. Lansia diatas 60 thn masuk gratis."
+            android:textSize="5pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textSize="5pt" />
+
+            <EditText
+                android:id="@+id/editTMDate"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:textSize="5pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Jumlah"
+                android:textSize="5pt" />
+
+            <EditText
+                android:id="@+id/editTMJumlah"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text="0"
+                android:textSize="5pt" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTNVBeli"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Beli"
+            android:layout_marginBottom="25dp"
+            android:textSize="5pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

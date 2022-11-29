@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_hawai4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nThe Wildest Waterpark in Indonesia\n\n" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/daftarUnpaidTiketRV"
+        android:layout_width="340dp"
+        android:layout_height="287dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textPembayaranTotal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="IDR"
+            android:textSize="8pt"/>
+
+        <Button
+            android:id="@+id/btnPembayaranBayar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Bayar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framePembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="25dp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1028234572346",
+    "project_id": "hawaiin-aja",
+    "storage_bucket": "hawaiin-aja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028234572346:android:df935c4bd60f02d1853b03",
+        "android_client_info": {
+          "package_name": "com.example.hawaiinaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028234572346-qfkttnt49e2a682mu781v1o1nq9mo07s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hawaiinaja",
+            "certificate_hash": "71084227d4b631e5a74c0b339db5cd71d8e633f2"
+          }
+        },
+        {
+          "client_id": "1028234572346-pb630n6fse3qcajcja57ok6dl7tdo2pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9TbTmnt1xEJ8R-r9L3cJ-nU5O58lMXZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028234572346-pb630n6fse3qcajcja57ok6dl7tdo2pd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

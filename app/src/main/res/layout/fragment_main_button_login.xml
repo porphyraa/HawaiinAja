@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainButtonUnlogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center">
+
+        <ImageView
+            android:id="@+id/btnMainLog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_lihatwahana" />
+
+        <ImageView
+            android:id="@+id/btnMainLog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_bayartiket" />
+
+        <ImageView
+            android:id="@+id/btnMainLog3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_histori"/>
+
+        <ImageView
+            android:id="@+id/btnMainLog4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_logout" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_hawai4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nThe Wildest Waterpark in Indonesia" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:text="10+"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Wahana Air Berkelas"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Hawai Waterpark memiliki wahana air yang sangat digemari pengunjung\n"
+                android:textSize="7pt" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:text="6th"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Hadir Terus Berkembang"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Kami hadir dan selalu berkembang untuk seluruh masyarakat Indonesia\n"
+                android:textSize="7pt" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:text="500k"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Pengunjung Senang"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Ratusan ribu pengunjung telah menikmati setiap bulannya\n\n"
+                android:textSize="7pt" />
+        </TableLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPesanTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan sekarang!" />
+
+
+    <FrameLayout
+        android:id="@+id/frameMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+</LinearLayout>
