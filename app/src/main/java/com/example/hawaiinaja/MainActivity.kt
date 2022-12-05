@@ -6,17 +6,16 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.example.hawaiinaja.databinding.ActivityMainBinding
-
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var container: SharedPreferences
-    val fragButtonUnlogin = MainButtonUnlogin()
-    val fragButtonLogin = MainButtonLogin()
+    private val fragButtonUnlogin = MainButtonUnlogin()
+    private val fragButtonLogin = MainButtonLogin()
+    private var connect: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,20 +25,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnPesanTiket.setOnClickListener(this)
 
         container = getSharedPreferences("CONNECT", Context.MODE_PRIVATE)
-        var connect = container.getBoolean("LOGIN", false)
+        connect = container.getBoolean("LOGIN", false)
         setMainButton(connect)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btnPesanTiket -> {
-                intent = Intent(this, DaftarWahana::class.java)
+                if (connect)
+                    intent = Intent(this, DaftarWahana::class.java)
+                else
+                    intent = Intent(this, LoginForm::class.java)
                 startActivity(intent)
             }
         }
     }
 
-    fun setMainButton(isConnected: Boolean) {
+    private fun setMainButton(isConnected: Boolean) {
         if (isConnected) {
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.frameMain, fragButtonLogin)
@@ -52,5 +54,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
 }

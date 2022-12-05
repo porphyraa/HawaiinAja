@@ -16,8 +16,8 @@ class LoginForm : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginFormBinding
 
     private lateinit var container: SharedPreferences
-    val fragButtonUnlogin = MainButtonUnlogin()
-    val fragButtonLogin = MainButtonLogin()
+    private val fragButtonUnlogin = MainButtonUnlogin()
+    private val fragButtonLogin = MainButtonLogin()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +34,8 @@ class LoginForm : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.textLoginRegister -> {
-//                intent = Intent(this, RegisterForm::class.java)
-//                startActivity(intent)
+                intent = Intent(this, RegisterForm::class.java)
+                startActivity(intent)
                 var conNow = container.getBoolean("LOGIN", false)
                 setMainButton(!conNow)
             }
@@ -47,7 +47,9 @@ class LoginForm : AppCompatActivity(), View.OnClickListener {
                 val inputId = (binding.editLoginUsername.text.toString()).toLowerCase()
                 val inputPw = binding.editLoginPassword.text.toString()
 
-                if (inputId != "") {
+                if (inputId == "" || inputPw == "") {
+                    showMessage("Username atau password tidak boleh kosong!")
+                } else {
                     if (id == inputId && pw == inputPw) {
                         val editor = container.edit()
                         editor.putBoolean("LOGIN", true)
@@ -56,10 +58,8 @@ class LoginForm : AppCompatActivity(), View.OnClickListener {
                         intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {
-                        showMessage("Username atau password salah")
+                        showMessage("Username atau password salah!")
                     }
-                } else {
-                    showMessage("Username atau password salah")
                 }
             }
         }
@@ -82,5 +82,4 @@ class LoginForm : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
-
 }

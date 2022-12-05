@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgPTM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/tiket_hw" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textPTMNama"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Tiket Hawai Waterpark - Weekday (Senin-Jumat)"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textPTMHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="Rp55.000"
+                android:textSize="6pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:text="Tanggal"
+                android:textSize="6pt" />
+
+            <EditText
+                android:id="@+id/editPTMTanggal"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:singleLine="true"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPTMUbah"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="85dp"
+            android:paddingVertical="0dp"
+            android:text="Ubah"
+            android:textSize="6pt"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

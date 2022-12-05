@@ -29,10 +29,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="12dp"
-            android:src="@drawable/ic_histori"/>
+            android:src="@drawable/ic_myticket" />
 
         <ImageView
             android:id="@+id/btnMainLog4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:src="@drawable/ic_histori" />
+
+        <ImageView
+            android:id="@+id/btnMainLog5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="12dp"

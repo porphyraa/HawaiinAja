@@ -15,8 +15,8 @@ class DaftarWahana : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDaftarWahanaBinding
 
     private lateinit var container: SharedPreferences
-    val fragButtonUnlogin = MainButtonUnlogin()
-    val fragButtonLogin = MainButtonLogin()
+    private val fragButtonUnlogin = MainButtonUnlogin()
+    private val fragButtonLogin = MainButtonLogin()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

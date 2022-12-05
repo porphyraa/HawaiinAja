@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
 import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
@@ -17,8 +18,8 @@ class RegisterForm : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityRegisterFormBinding
 
     private lateinit var container: SharedPreferences
-    val fragButtonUnlogin = MainButtonUnlogin()
-    val fragButtonLogin = MainButtonLogin()
+    private val fragButtonUnlogin = MainButtonUnlogin()
+    private val fragButtonLogin = MainButtonLogin()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,18 +39,27 @@ class RegisterForm : AppCompatActivity(), View.OnClickListener {
                 val editor = container.edit()
 
                 val id = (binding.editRegUsername.text.toString()).toLowerCase()
+                val em = binding.editRegEmail.text.toString()
+                val no = binding.editRegPhone.text.toString()
                 val pw = binding.editRegPassword.text.toString()
                 val cpw = binding.editRegConfirmPassword.text.toString()
 
-                if (pw == cpw) {
-                    editor.putString("ID", id)
-                    editor.putString("PW", pw)
-                    editor.commit()
+                if(id == "" || em == "" || no == "" || pw == "" || cpw == ""){
+                    showMessage("Tolong masukkan data dengan lengkap!")
+                }else {
+                    if (pw == cpw) {
+                        editor.putString("ID", id)
+                        editor.putString("PW", pw)
+                        editor.commit()
 
-                    intent = Intent(this, LoginForm::class.java)
-                    startActivity(intent)
-                } else {
-                    showMessage("Konfirmasi password salah!")
+                        showMessage("Akun berhasil dibuat!")
+                        Handler().postDelayed({
+                            intent = Intent(this, LoginForm::class.java)
+                            startActivity(intent)
+                        }, 2000)
+                    } else {
+                        showMessage("Konfirmasi password salah!")
+                    }
                 }
             }
         }

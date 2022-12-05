@@ -34,11 +34,16 @@ class MainButtonLogin : Fragment() {
         }
 
         view.btnMainLog3.setOnClickListener {
-//            val intent = Intent(requireContext(), Histori::class.java)
-//            startActivity(intent)
+            val intent = Intent(requireContext(), TiketSaya::class.java)
+            startActivity(intent)
         }
 
         view.btnMainLog4.setOnClickListener {
+            val intent = Intent(requireContext(), Histori::class.java)
+            startActivity(intent)
+        }
+
+        view.btnMainLog5.setOnClickListener {
             val editor = this.activity!!
                 .getSharedPreferences("CONNECT", Context.MODE_PRIVATE).edit()
             editor.putBoolean("LOGIN", false)

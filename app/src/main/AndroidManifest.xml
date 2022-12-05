@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pembayaran"></activity>
+        <activity android:name=".Histori"></activity>
+        <activity android:name=".TiketSaya" />
+        <activity android:name=".Pembayaran" />
         <activity android:name=".LoginForm" />
         <activity android:name=".RegisterForm" />
         <activity android:name=".DaftarTiket" />

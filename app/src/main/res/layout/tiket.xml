@@ -75,7 +75,7 @@
             android:id="@+id/btnTNVBeli"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Beli"
+            android:text="Pesan"
             android:layout_marginBottom="25dp"
             android:textSize="5pt" />
 

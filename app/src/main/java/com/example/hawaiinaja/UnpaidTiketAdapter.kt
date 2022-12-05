@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
-import java.time.LocalDate
 
 class UnpaidTiketAdapter(
     var utiket: MutableList<UnpaidTiketModel>,

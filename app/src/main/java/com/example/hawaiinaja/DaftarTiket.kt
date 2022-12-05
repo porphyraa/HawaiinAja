@@ -17,8 +17,8 @@ class DaftarTiket : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityDaftarTiketBinding
 
     private lateinit var container: SharedPreferences
-    val fragButtonUnlogin = MainButtonUnlogin()
-    val fragButtonLogin = MainButtonLogin()
+    private val fragButtonUnlogin = MainButtonUnlogin()
+    private val fragButtonLogin = MainButtonLogin()
 
     private var idxTiket = 0
 

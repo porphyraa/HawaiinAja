@@ -15,12 +15,17 @@ class UnpaidTiketViewModel : ViewModel() {
 
     fun getListUnpaidTiket() = listUnpaidTiket
 
-    fun addUnpaidTiket(unpaidTiket: UnpaidTiketModel) {
-        listUnpaidTiket.value!!.add(unpaidTiket)
+    fun addUnpaidTiket(un: UnpaidTiketModel) {
+        listUnpaidTiket.value!!.add(un)
     }
 
     fun removeUnpaidTiket(i: Int) {
         listUnpaidTiket.value!!.removeAt(i)
+        listState.value = System.currentTimeMillis()
+    }
+
+    fun removeAllUnpaidTiket() {
+        listUnpaidTiket.value!!.clear()
         listState.value = System.currentTimeMillis()
     }
 }
